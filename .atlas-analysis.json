@@ -1,0 +1,153 @@
+{
+  "projectType": "ai-ml",
+  "projectName": "TensorRT-LLM",
+  "projectDescription": "Optimized Large Language Model inference library with state-of-the-art performance on NVIDIA GPUs",
+  "theme": "aspen",
+  "primaryColor": "#76B900",
+  "lightColor": "#8FD119",
+  "darkColor": "#5A8F00",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/architecture",
+              "concepts/backends",
+              "concepts/quantization",
+              "concepts/parallelism"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/basic-inference",
+              "guides/multi-gpu",
+              "guides/quantization",
+              "guides/speculative-decoding",
+              "guides/serving",
+              "guides/benchmarking",
+              "guides/multimodal"
+            ]
+          },
+          {
+            "group": "Features",
+            "pages": [
+              "features/attention-mechanisms",
+              "features/kv-cache",
+              "features/guided-decoding",
+              "features/lora",
+              "features/disaggregated-serving"
+            ]
+          },
+          {
+            "group": "Supported Models",
+            "pages": [
+              "models/overview",
+              "models/llama",
+              "models/mistral",
+              "models/qwen",
+              "models/deepseek",
+              "models/gemma",
+              "models/multimodal"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Core API",
+            "pages": [
+              "api/llm",
+              "api/sampling-params",
+              "api/configuration"
+            ]
+          },
+          {
+            "group": "Backend Configuration",
+            "pages": [
+              "api/torch-llm-args",
+              "api/trt-llm-args",
+              "api/build-config"
+            ]
+          },
+          {
+            "group": "Advanced Features",
+            "pages": [
+              "api/speculative-decoding",
+              "api/executor",
+              "api/quantization",
+              "api/parallelism"
+            ]
+          },
+          {
+            "group": "CLI Tools",
+            "pages": [
+              "api/cli/trtllm-serve",
+              "api/cli/trtllm-bench",
+              "api/cli/trtllm-build"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Examples",
+        "groups": [
+          {
+            "group": "Basic Examples",
+            "pages": [
+              "examples/simple-generation",
+              "examples/streaming",
+              "examples/batch-inference"
+            ]
+          },
+          {
+            "group": "Advanced Examples",
+            "pages": [
+              "examples/fp8-quantization",
+              "examples/tensor-parallelism",
+              "examples/eagle-decoding",
+              "examples/json-mode",
+              "examples/llama-vision"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Multiple backend support (PyTorch, TensorRT, AutoDeploy)",
+    "Advanced quantization (FP8, FP4, INT8, INT4 with AWQ/GPTQ)",
+    "Speculative decoding with 6+ algorithms (EAGLE-3, NGram, MTP)",
+    "Disaggregated serving for optimized prefill and decode",
+    "Distributed inference with tensor/pipeline/expert parallelism",
+    "Production-ready serving with OpenAI-compatible API",
+    "Comprehensive model support (50+ architectures including multimodal)"
+  ],
+  "publicApiSurface": [
+    "LLM - Main inference class",
+    "AsyncLLM - Asynchronous inference wrapper",
+    "SamplingParams - Generation parameter configuration",
+    "LlmArgs/TorchLlmArgs/TrtLlmArgs - Backend configuration classes",
+    "GenerationExecutor - Low-level execution interface",
+    "AutoModelForCausalLM - Auto model loading",
+    "trtllm-serve - Production serving CLI",
+    "trtllm-bench - Benchmarking CLI",
+    "Eagle3DecodingConfig - Speculative decoding configuration",
+    "KvCacheConfig - KV cache management configuration",
+    "GuidedDecodingParams - Structured output configuration",
+    "QuantAlgo/QuantMode - Quantization enums and utilities"
+  ]
+}
